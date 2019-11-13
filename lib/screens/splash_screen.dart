@@ -49,9 +49,11 @@ class SplashScreen extends StatelessWidget {
               child: Text("Goto new Activity"),
               textColor: Colors.white,
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => AuthenticationScreen())
+                  MaterialPageRoute(
+                    builder: (context) => AuthenticationScreen(),
+                  )
                 );
               },
             )
