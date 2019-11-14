@@ -71,6 +71,9 @@ class AuthenticationScreen extends StatelessWidget {
                 child: const Text(
                   'Log in',
                   textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
                 ),
               ),
             ),
