@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:e_commerce_ui_kit/screens/login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -40,16 +41,30 @@ class LunchState extends State<SignUpScreen> {
         Container(
           margin: EdgeInsets.only(top: 20.0, left: 30.0),
           child: Text(
-            "Login",
+            "Sign Up",
             style: TextStyle(
                 fontSize: 30.0
             ),
           ),
         ),
 
+        // NameEdit text
+        Container(
+          margin: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
+          child: TextFormField(
+            decoration: InputDecoration(
+              labelText: "Name",     // Set text upper animation
+              border: OutlineInputBorder(),
+            ),
+            minLines: 1,
+            autofocus: false,
+            keyboardType: TextInputType.text,
+          ),
+        ),
+
         // Email Edit text
         Container(
-          margin: EdgeInsets.only(top: 50.0, left: 30.0, right: 30.0),
+          margin: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
           child: TextFormField(
             decoration: InputDecoration(
                 labelText: "Email",
@@ -63,7 +78,7 @@ class LunchState extends State<SignUpScreen> {
 
         // Password Edit text
         Container(
-          margin: EdgeInsets.only(top: 50.0, left: 30.0, right: 30.0),
+          margin: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
           child: TextFormField(
             decoration: InputDecoration(
               labelText: "Password",     // Set text upper animation
@@ -99,7 +114,7 @@ class LunchState extends State<SignUpScreen> {
                       constraints: const BoxConstraints(maxWidth: 300.0, minHeight: 40.0), // min sizes for Material buttons
                       alignment: Alignment.center,
                       child: const Text(
-                        'Log in',
+                        'Sign Up',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white
@@ -112,26 +127,26 @@ class LunchState extends State<SignUpScreen> {
         ),
 
         Center(
-            child: Container(
-                margin: EdgeInsets.only(top: 20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text("Don't Have any account? "),
-                    GestureDetector(
-                      child: Text(
-                        "  Sign Up",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUpScreen()));
-                      },
-                    )
-                  ],
+          child: Container(
+            margin: EdgeInsets.only(top: 20.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text("Already have an account? "),
+                GestureDetector(
+                  child: Text(
+                    "  Login",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreen()));
+                  },
                 )
+              ],
             )
+          )
         )
       ],
     );
