@@ -13,7 +13,10 @@ class LunchState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      body: initScreen(context),
+      body: SingleChildScrollView(
+        child: initScreen(context),
+      )
+      ,
     );
   }
 
