@@ -44,6 +44,18 @@ flutter:
   assets:
     - images/app_logo.png
     - images/login_screen_image.png
+    - images/men_t_shirt_1.jpeg
+    - images/men_t_shirt_2.jpg
+    - images/women_t_shirt_2.png
+    - images/shopping_one.jpg
+    - images/shopping_two.jpg
+    - mask_group_5.png
+    - mask_group_6.png
+    - mask_group_7.png
+    - mask_group_8.png
+    - mask_group_10.png
+    - mask_group_11.png
+    - mask_group_12.png
     - icons/back_button.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see

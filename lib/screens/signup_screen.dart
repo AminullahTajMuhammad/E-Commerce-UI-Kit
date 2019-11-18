@@ -129,6 +129,7 @@ class LunchState extends State<SignUpScreen> {
         Center(
           child: Container(
             margin: EdgeInsets.only(top: 20.0),
+            padding: EdgeInsets.only(bottom: 30.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -141,7 +142,7 @@ class LunchState extends State<SignUpScreen> {
                     ),
                   ),
                   onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreen()));
+                    Navigator.of(context).pop();
                   },
                 )
               ],

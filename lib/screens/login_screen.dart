@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:e_commerce_ui_kit/screens/signup_screen.dart';
+import 'home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -85,7 +86,8 @@ class LunchState extends State<LoginScreen> {
             margin: EdgeInsets.only(top: 50.0),
             child: RaisedButton(
               onPressed: () {
-
+                Route route = MaterialPageRoute(builder: (context) => HomeScreen());
+                Navigator.push(context, route);
               }, // When Click on Button goto Login Screen
 
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
@@ -116,6 +118,7 @@ class LunchState extends State<LoginScreen> {
 
         Center(
           child: Container(
+            padding: EdgeInsets.only(bottom: 30.0),
             margin: EdgeInsets.only(top: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
