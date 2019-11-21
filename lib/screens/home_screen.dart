@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_items_details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -70,7 +71,8 @@ class LunchState extends State<HomeScreen> {
                   padding: EdgeInsets.only(top: 20.0, right: 20.0),
                   child: GestureDetector(
                     onTap: () {
-
+                      var route = MaterialPageRoute(builder: (context) => HomeItemsDetailsScreens());
+                      Navigator.of(context).push(route);
                     },
                     child: Text(
                       "See All",
@@ -104,7 +106,8 @@ class LunchState extends State<HomeScreen> {
                   padding: EdgeInsets.only(top: 20.0, right: 20.0),
                   child: GestureDetector(
                     onTap: () {
-
+                      var route = MaterialPageRoute(builder: (context) => HomeItemsDetailsScreens());
+                      Navigator.of(context).push(route);
                     },
                     child: Text(
                       "See All",
@@ -138,7 +141,8 @@ class LunchState extends State<HomeScreen> {
                   padding: EdgeInsets.only(top: 20.0, right: 20.0),
                   child: GestureDetector(
                     onTap: () {
-
+                      var route = MaterialPageRoute(builder: (context) => HomeItemsDetailsScreens());
+                      Navigator.of(context).push(route);
                     },
                     child: Text(
                       "See All",
@@ -167,7 +171,6 @@ class LunchState extends State<HomeScreen> {
         children: <Widget>[
           items("images/mask_group_5.png", "Item Price", "Item Desc "),
           items("images/mask_group_6.png", "Item Price", "Item Desc "),
-          items("images/mask_group_7.png", "Item Price", "Item Desc "),
           items("images/mask_group_8.png", "Item Price", "Item Desc "),
           items("images/mask_group_10.png", "Item Price", "Item Desc "),
           items("images/mask_group_11.png", "Item Price", "Item Desc "),
