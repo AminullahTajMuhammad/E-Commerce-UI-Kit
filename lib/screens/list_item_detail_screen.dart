@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'add_to_cart_screen.dart';
+import 'buy_now_screen.dart';
 
 class ItemDetailsScreen extends StatefulWidget {
   @override
@@ -22,6 +24,7 @@ class LunchState extends State<ItemDetailsScreen> {
             Navigator.pop(context);
           },
         ),
+        title: Text("Item Details", style: TextStyle(color: Colors.black),),
         actions: <Widget>[
           GestureDetector(
             onTap: () {},
@@ -74,6 +77,7 @@ class LunchState extends State<ItemDetailsScreen> {
               style: TextStyle(
                 color: Color(0xff7990DD),
                 fontSize: 15.0,
+                fontWeight: FontWeight.bold
               ),
             ),
           ),  // Title Container Widgets
@@ -81,6 +85,8 @@ class LunchState extends State<ItemDetailsScreen> {
           Container(
             padding: EdgeInsets.only(left: 25.0, top: 20.0),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 RaisedButton(
                   onPressed: () {
@@ -113,7 +119,7 @@ class LunchState extends State<ItemDetailsScreen> {
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  padding: EdgeInsets.only(left: 80.0),
+                  margin: EdgeInsets.only(left: 30.0),
                 ),
               ],
             )
@@ -221,21 +227,28 @@ class LunchState extends State<ItemDetailsScreen> {
                 Align(
                   alignment: FractionalOffset.bottomCenter,
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      // So this code will push a new widget in stack
+                      var route = MaterialPageRoute(builder: (context) => CartScreen());
+                      Navigator.of(context).push(route);
+                    },
                     color: Color(0xffEEEEEE),
                     child: Text("Add to cart", style: TextStyle(color: Colors.black),),
                     height: 45.0,
-                    minWidth: 205.0,
+                    minWidth: 150.0,
                   ),
                 ),
                 Align(
                   alignment: FractionalOffset.bottomRight,
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      var route = MaterialPageRoute(builder: (context) => BuyNowScreen());
+                      Navigator.push(context, route);
+                    },
                     color: Color(0xff7990DD),
                     child: Text("Buy Now", style: TextStyle(color: Colors.white),),
                     height: 45.0,
-                    minWidth: 205.0,
+                    minWidth: 150.0,
                   ),
                 ),
               ],

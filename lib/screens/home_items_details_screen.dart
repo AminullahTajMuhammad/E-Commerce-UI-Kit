@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
+import 'list_item_detail_screen.dart';
 
 class HomeItemsDetailsScreens extends StatefulWidget {
   @override
@@ -79,6 +80,9 @@ class LunchState extends State<HomeItemsDetailsScreens> {
           children: <Widget>[
             Image(image: image),
             ListTile(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ItemDetailsScreen()));
+              },
               title: Text(
                 title,
                 style: TextStyle(fontWeight: FontWeight.bold),
