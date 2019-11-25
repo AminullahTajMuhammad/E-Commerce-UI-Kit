@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'payment_screen.dart';
 
 class CheckoutScreen extends StatefulWidget {
   @override
@@ -160,7 +161,7 @@ class LunchState extends State<CheckoutScreen> {
                     margin: EdgeInsets.only(top: 30.0),
                     child: RaisedButton(
                       onPressed: () {
-
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => PaymentScreen()));
                       }, // When Click on Button goto Login Screen
 
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
