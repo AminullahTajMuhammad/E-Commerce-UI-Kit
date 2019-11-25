@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'create_address_screen.dart';
 
 class CartScreen extends StatefulWidget {
   @override
@@ -55,7 +56,7 @@ class LunchState extends State<CartScreen> {
             child: MaterialButton(
               height: 50.0,
               onPressed: () {
-
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => CreateAddressScreen()));
               },
               color: Color(0xff374ABE),
               minWidth: double.maxFinite,
