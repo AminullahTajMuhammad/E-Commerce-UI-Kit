@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'add_to_cart_screen.dart';
-import 'buy_now_screen.dart';
+import 'create_address_screen.dart';
 
 class ItemDetailsScreen extends StatefulWidget {
   @override
@@ -242,7 +242,7 @@ class LunchState extends State<ItemDetailsScreen> {
                   alignment: FractionalOffset.bottomRight,
                   child: MaterialButton(
                     onPressed: () {
-                      var route = MaterialPageRoute(builder: (context) => BuyNowScreen());
+                      var route = MaterialPageRoute(builder: (context) => CreateAddressScreen());
                       Navigator.push(context, route);
                     },
                     color: Color(0xff7990DD),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'checkout_screen.dart';
 
 class CreateAddressScreen extends StatefulWidget {
   @override
@@ -10,7 +11,21 @@ class LunchState extends State<CreateAddressScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text("Create Address", style: TextStyle(color: Colors.black),),
+        backgroundColor: Colors.white,
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Container(
+            child: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: initScreen(),
       ),
@@ -21,32 +36,6 @@ class LunchState extends State<CreateAddressScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-//        // Login Back Button Section
-        Container(
-            margin: EdgeInsets.only(left: 30.0, top: 50.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.of(context).pop();
-              },
-              child: Icon(
-                Icons.keyboard_backspace,
-                color: Color(0xffc5ccd6),
-                size: 30.0,
-              ),
-            )
-        ),
-
-        // title Text Section
-        Container(
-          margin: EdgeInsets.only(top: 20.0, left: 30.0),
-          child: Text(
-            "Create Address",
-            style: TextStyle(
-                fontSize: 30.0
-            ),
-          ),
-        ),
-
         // NameEdit text
         Container(
           margin: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
@@ -123,8 +112,8 @@ class LunchState extends State<CreateAddressScreen> {
                 margin: EdgeInsets.only(top: 50.0, bottom: 10.0),
                 child: RaisedButton(
                   onPressed: () {
-
-                  }, // When Click on Button goto Login Screen
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => CheckoutScreen()));
+                  }, // Click Listener
 
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
                   padding: const EdgeInsets.all(0.0),
