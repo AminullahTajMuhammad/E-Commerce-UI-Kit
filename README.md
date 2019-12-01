@@ -1,16 +1,44 @@
-# e_commerce_ui_kit
+# :point_right: E Commerce App UI Kit in Flutter 
 
-A new e-commerce ui kit in flutter
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https:www.aminullah.me">Aminullah Taj Muhammad</a> 
+</div>
+<br/>
 
-## Getting Started
+A Beautiful Ui Kit of E-Commerce App in Flutter 
 
-This project is a starting point for a Flutter application.
+##  :movie_camera: Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ioyeDwWODwk/0.jpg)](https://www.youtube.com/watch?v=ioyeDwWODwk)
 
-A few resources to get you started if this is your first Flutter project:
+## 👨 Developed By
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+Aminullah Taj Muhammad
+```
+- Website (http://aminullahtajmuhammad.github.io)
+- Twitter (http://twitter.com/TajAminullah)
+- Medium (https://medium.com/@aminullahtaj)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+# 👍 How to Contribute
+1. Fork it.
+2. Create your feature branch (git checkout -b my-new-feature).
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push to the branch (git push origin my-new-feature).
+5. Create new Pull Request.
+
+# 📃 License
+
+    Copyright 2018 Aminullah Taj Muhammad
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
